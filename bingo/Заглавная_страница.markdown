@@ -1,0 +1,6 @@
+---
+layout: page
+title: Заглавная страница
+permalink: Заглавная_страница
+tags: 
+---

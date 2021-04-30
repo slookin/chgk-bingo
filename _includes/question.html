@@ -1,0 +1,77 @@
+<style>
+.q {
+    background-color: #EEE;
+    border: 1px solid #999;
+    font-size: 100%;
+    line-height: 1.1;
+    padding: 7px;
+}                              
+
+.q p {
+    margin-top:10px;
+}
+
+.q .question {
+    margin: 15px 10px;
+    font-size: 110%;
+    line-height: 1.5;
+}
+</style>
+
+{% comment %}
+q:
+   turnir
+   url
+   no
+   text
+   img
+   question
+   answer
+   comment
+   source
+   alternative_answer
+   wrong_answer
+{% endcomment %}
+
+<div class="q">
+  {% if include.url!=nil %}
+    <div class="link">
+      <a rel="nofollow" href="{{ include.url}}">{{include.turnir}}</a>
+      <a rel="nofollow" href="{{ include.url}}/{{include.no}}">Вопрос {{include.no}}</a>
+    </div>
+  {% endif %}
+  {% if include.img!=nil %}
+<div class="image"><b>Раздаётся картинка:</b><img src="{{include.img}}"></div>
+  {% endif %}
+  {% if include.text!=nil %}
+<div class="image"><b>Раздаётся текст</b><br><b>{{include.text}}</b><br>
+</div>
+  {% endif %}
+
+  <div class="question">  
+  {{include.question}}
+  </div>
+  <div class="answer">
+   <p><b>Ответ:</b> {{include.answer}}</p>
+  </div>
+  {% if include.alternative_answer!=nil %}
+   <div class="answer">
+    <p><b>Зачёт:</b> {{include.alternative_answer}}</p>
+  </div>
+  {% endif %}
+  {% if include.wrong_answer!=nil %}
+   <div class="answer">
+    <p><b>Зачёт:</b> {{include.wrong_answer}}</p>
+  </div>
+  {% endif %}
+  <div class="comment">
+   <p><b>Комментарий:</b> {{include.comment}}</p>
+  </div>
+  <div class="source">
+   <p><b>Источник:</b> {{include.source}}</p>
+  </div>
+  <div class="author">
+   <p><b>Автор:</b> {{include.author}}</p>
+  </div>
+</div>
+<!-- img, text, zachet -->

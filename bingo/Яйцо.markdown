@@ -1,0 +1,7 @@
+---
+layout: page
+title: Яйцо
+permalink: Яйцо
+tags: 
+---
+#REDIRECT [Ab ovo](../Ab ovo)

@@ -1,0 +1,7 @@
+---
+layout: page
+title: Кювье, жорж
+permalink: Кювье,_жорж
+tags: 
+---
+#REDIRECT [Кювье, Жорж](../Кювье, Жорж)
