@@ -30,9 +30,9 @@ email: slookin@gmail.com
 #Важное замечание: страницы бинго-вики посвящены сущностям, знание (о) которых может помочь ответить на вопрос, в котором они встречаются. 
 #Так, например, статьи о «Малолетнем племяннике автора вопроса» в проекте не будет, потому что знание о том, что бывают такие вопросы, 
 #никак не помогает ответить ни на один из них.
-baseurl: "/turbo-spork" # the subpath of your site, e.g. /blog
-url: "https://slookin.github.io/turbo-spork" # the base hostname & protocol for your site, e.g. http://example.com
-root: "/turbo-spork"
+baseurl: "/chgk-bingo" # the subpath of your site, e.g. /blog
+url: "https://slookin.github.io/chgk-bingo" # the base hostname & protocol for your site, e.g. http://example.com
+root: "/chgk-bingo"
 twitter_username: jekyllrb
 github_username:  jekyll
 # Build settings
